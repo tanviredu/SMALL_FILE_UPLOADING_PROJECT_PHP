@@ -1,5 +1,3 @@
-
-
 <html>
   <head>
     <title>
@@ -72,6 +70,14 @@
 </section>
 
 
+<center>
+    <button class="btn">
+    <a href="second.php">Go To Database </a><span class="badge badge-primary"></span>
+    </button>
+    
+</center>
+
+
 
 
 
@@ -90,6 +96,8 @@
 <?php 
   // first make a whole form
   require_once('input.php');
+  require_once('function.php');
+
 
 ?>
 

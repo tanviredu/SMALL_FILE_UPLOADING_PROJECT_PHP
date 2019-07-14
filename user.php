@@ -12,6 +12,13 @@
             $database->query($sql);
             
         }
+
+        public function get_all_user(){
+            global $database;
+            $sql = "SELECT * FROM user";
+            $result = $database->query($sql);
+            return $result;
+        }
     }
 
     $user =  new User(); 
