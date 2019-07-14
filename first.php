@@ -1,7 +1,4 @@
-<?php 
-  // first make a whole form
 
-?>
 
 <html>
   <head>
@@ -37,7 +34,7 @@
             </div>
             <div class="col-md-8 py-5 border">
                 <h4 class="pb-4">Please fill with your details</h4>
-                <form>
+                <form mathod="POST" action="" enctype="multipart/form-data"" >
                     <div class="form-row">
                         <div class="form-group col-md-6">
                           <input id="Full Name" name="name" placeholder="Full Name" class="form-control" type="text">
@@ -48,16 +45,16 @@
                       </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <input id="Mobile No." name="mobile" placeholder="Mobile No." class="form-control" required="required" type="text">
+                            <input id="Mobile No." name="mobile" placeholder="Mobile No." class="form-control"  type="text">
                         </div>
                         <div class="form-group col-md-6">
-                        <input id="Mobile No." name="dname" placeholder="Department name." class="form-control" required="required" type="text">
+                        <input id="Mobile No." name="dname" placeholder="Department name." class="form-control"  type="text">
                         </div>
                         <div class="form-group col-md-6">
-                        <input id="Mobile No." name="id" placeholder="student id " class="form-control" required="required" type="text">
+                        <input id="Mobile No." name="id" placeholder="student id " class="form-control"  type="text">
                         </div>
                         <div class="form-group col-md-6">
-                        <input id="Mobile No."  placeholder="Upload image" name='image'  required="required" type="file">
+                        <input id="Mobile No."  placeholder="Upload image" name='image'   type="file">
                         <label><b>Upload your image</b></label>
                         </div>
                                                 
@@ -65,7 +62,7 @@
                     
                     
                     <div class="form-row" >
-                        <button type="button" style="margin-left:200px; width:300px" class="btn btn-danger">Submit</button>
+                        <input type="submit" style="margin-left:200px; width:300px" name='submit' value='submit' class="btn btn-danger">
                     </div>
                     
                 </form>
@@ -89,3 +86,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </html>
+
+<?php 
+  // first make a whole form
+  require_once('input.php');
+
+?>
+
+<?php 
+
+  $inp->input_data();
+
+?>
